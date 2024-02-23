@@ -70,7 +70,7 @@ if stock_list_nifty_200_screener.empty:
     stock_list_nifty_200_screener_string = "No stocks available under this screener"
 else:
     stock_list_nifty_200_screener = stock_list_nifty_200_screener.drop(['sr', 'bsecode', 'per_chg', 'close', 'volume'], axis=1)
-    stock_list_nifty_200_screene_string = stock_list_nifty_200_screener.to_string()
+    stock_list_nifty_200_screener_string = stock_list_nifty_200_screener.to_string()
 if stock_list_nifty_500_screener.empty:
     stock_list_nifty_500_screener_string = "No stocks available under this screener"
 else:

@@ -12,7 +12,7 @@ EMAIL_SERVER = 'smtp-mail.outlook.com'
 today = date.today()
 d1 = today.strftime("%d.%m.%Y")
 
-envars = r'C:\Users\ishan\Desktop\Ishan\Coding\Projects\BabaStocks\BabaStocksScanners\.env'
+envars = r'StockProject\BabaStocksScanners\.env'
 load_dotenv(envars)
 
 sender_email = os.getenv("EMAIL")
