@@ -1,16 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
-
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup as bs
-
-
-# In[11]:
-
 
 url = 'https://chartink.com/screener/process'
 
@@ -25,9 +15,6 @@ with requests.session() as s:
     r_data = s.get(url)
     soup = bs(r_data.content, 'lxml')
     meta = soup.find('meta', {'name': 'csrf-token'})["content"]
-
-
-# In[12]:
 
 
 header = {"x-csrf-token": meta}
